@@ -999,6 +999,14 @@ body {
     box-shadow: 0 0 15px rgba(255, 177, 105, 0.5);
 }
 
+.panitia-contact {
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
 /* ===== FOOTER ===== */
 .footer-text {
     font-size: 0.9rem;

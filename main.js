@@ -61,10 +61,10 @@ const DIVISI_DATA = {
         category: 'E-Sports',
         image: 'TARI TRADISIONAL.IMAGE.jpeg',
         desc: 'Turnamen Mobile Legends 5v5 antar sekolah. Adu strategi dan koordinasi tim untuk membawa trofi EXPONER CUP 2026!',
-        wa: '6281292204707',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
-            juknis: '#',
+            juknis: 'juknis-ml.pdf',
             pendaftaran: 'https://forms.gle/RDZWqMXLsi6o4xMe7',
             undangan: '#'
         }
@@ -75,10 +75,10 @@ const DIVISI_DATA = {
         category: 'E-Sports',
         image: 'FREEFIRE.IMAGE.jpeg',
         desc: 'Turnamen Free Fire Squad mode Battle Royale. Squad terakhir yang bertahan adalah juaranya!',
-        wa: '628988629430',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
-            juknis: '#',
+            juknis: 'juknis-ff.pdf',
             pendaftaran: 'https://forms.gle/Xvkxtyvrkz5WvAG39',
             undangan: '#'
         }
@@ -89,10 +89,10 @@ const DIVISI_DATA = {
         category: 'Olahraga',
         image: 'basket.image.jpeg',
         desc: 'Kompetisi bola basket kategori Putra dan Putri dengan sistem setengah kompetisi.',
-        wa: '6281281210413',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
-            juknis: '#',
+            juknis: 'juknis-basket.pdf',
             pendaftaran: 'https://forms.gle/oaRyL5y5e26njkPRA',
             undangan: '#'
         }
@@ -103,25 +103,25 @@ const DIVISI_DATA = {
         category: 'Seni & Kreativitas',
         image: 'short movie.jpeg',
         desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasmu lewat visual!',
-        wa: '6281223460047',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
             juknis: '#',
-            pendaftaran: '#',
+            pendaftaran: 'https://forms.gle/ejzimcXMHQ6Bn6Tt5',
             undangan: '#'
         }
     },
-    futsal: {
+futsal: {
         slug: 'futsal',
         name: 'Futsal',
         category: 'Olahraga',
-        image: 'FUTSAL.IMAGE.jpeg',
+        image: 'FUTSAL.IMGE.jpeg',
         desc: 'Kompetisi futsal 5v5 antar sekolah. Eksekusi strategi dan teamwork untuk menjadi juara!',
-        wa: '6289676639101',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
-            juknis: '#',
-            pendaftaran: 'https://forms.gle/6S6LVjcWRV64ExSRA',
+            juknis: 'juknis-futsal.pdf',
+            pendaftaran: 'https://forms.gle/frGGAf7FU6dPxVwB7',
             undangan: '#'
         }
     },
@@ -131,7 +131,7 @@ const DIVISI_DATA = {
         category: 'Kepalangmerahan',
         image: 'PMR.IMAGE.jpeg',
         desc: 'Lomba keterampilan Palang Merah Remaja: Pertolongan Pertama, donor darah, dan tanggap bencana.',
-        wa: '6281387274819',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
             juknis: '#',
@@ -145,7 +145,7 @@ const DIVISI_DATA = {
         category: 'Desain Grafis',
         image: 'digital poster.jpeg',
         desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Emas".',
-        wa: '6281298363936',
+        wa: '6285750008886',
         links: {
             guidebook: '#',
             juknis: '#',
@@ -197,9 +197,6 @@ function renderDivisionPage() {
     if (hero) {
         hero.style.display = 'flex';
         hero.innerHTML = `
-            <div class="division-hero-image">
-                <img src="${data.image}" alt="${data.name}" onerror="this.onerror=null;this.src='card.jpg'">
-            </div>
             <div class="division-hero-text">
                 <span class="division-tag">${data.category}</span>
                 <h1 class="division-hero-title">${data.name}</h1>
