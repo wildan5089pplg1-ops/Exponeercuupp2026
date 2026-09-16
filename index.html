@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WELCOME EXPONER CUP 2026</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+    <!-- 3D Animated Background -->
+    <div class="bg-3d-container">
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-shape"></div>
+        <div class="bg-geo"></div>
+        <div class="bg-geo"></div>
+        <div class="bg-geo"></div>
+        <div class="bg-geo"></div>
+        <div class="bg-geo"></div>
+        <div class="bg-geo"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+        <div class="bg-particle"></div>
+    </div>
+    <div class="bg-grid"></div>
+
+    <div class="site-wrapper">
+        <main class="site-main">
+
+            <!-- Top navigation -->
+            <nav class="page-nav">
+                <a href="index.html" class="page-nav-brand">
+                    <i data-lucide="trophy"></i>
+                    <span>EXPONER CUP 2026</span>
+                </a>
+                <div class="page-nav-links">
+                    <a href="#divisi" class="nav-link-divisi"><i data-lucide="gamepad-2"></i>Pilih Divisi</a>
+                </div>
+            </nav>
+
+            <div class="inner">
+                <!-- Card Image / Logo -->
+                <div class="image-component">
+                    <img src="card.jpg" alt="Exponer Cup Logo" onerror="this.onerror=null;this.src='card.jpg'">
+                </div>
+
+                <!-- Divider -->
+                <div class="divider"></div>
+
+                <!-- Titles -->
+                <h1 class="main-title">WELCOME, EXPONERS!</h1>
+                <p class="subtitle">OSIS Sekolah Prestasi Prima is back with one of the most anticipated events of the
+                    year! 💫 <strong>𝐄𝐗𝐏𝐋𝐎𝐒𝐈𝐎𝐍 𝐎𝐅 𝐆𝐄𝐍𝐄𝐑𝐀𝐓𝐈𝐎𝐍 𝐂𝐔𝐏 𝐗</strong> ⚡ What are you
+                    waiting for? Come register yourself/your team now 📣</p>
+
+                <!-- Timer -->
+                <div class="timer-component" id="countdown">
+                    <div class="timer-item">
+                        <span class="timer-number" id="days">00</span>
+                        <span class="timer-label">days</span>
+                    </div>
+                    <span class="timer-separator">:</span>
+                    <div class="timer-item">
+                        <span class="timer-number" id="hours">00</span>
+                        <span class="timer-label">hours</span>
+                    </div>
+                    <span class="timer-separator">:</span>
+                    <div class="timer-item">
+                        <span class="timer-number" id="minutes">00</span>
+                        <span class="timer-label">minutes</span>
+                    </div>
+                    <span class="timer-separator">:</span>
+                    <div class="timer-item">
+                        <span class="timer-number" id="seconds">00</span>
+                        <span class="timer-label">secs</span>
+                    </div>
+                </div>
+
+                <!-- Division list: click -> next page (Guidebook, Juknis, Pendaftaran, Surat Undangan) -->
+                <section class="division-section" id="divisi">
+                    <h2 class="section-title">PILIH DIVISI LOMBA</h2>
+                    <p class="section-sub">Klik salah satu lomba untuk melihat halaman Guidebook, Juknis, Pendaftaran,
+                        dan Surat Undangan.</p>
+
+                    <div class="division-grid">
+                        <a href="divisi-ml.html" class="division-card">
+                            <div class="division-image"><img src="gambar/TARI TRADISIONAL.IMAGE.jpeg" alt="Mobile Legends" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Mobile Legends</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                        <a href="divisi-ff.html" class="division-card">
+                            <div class="division-image"><img src="gambar/FREEFIRE.IMAGE.jpeg" alt="Free Fire" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Free Fire</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                        <a href="divisi-basket.html" class="division-card">
+                            <div class="division-image"><img src="gambar/basket.image.jpeg" alt="Basket Putra & Putri" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Basket Putra & Putri</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                        <a href="divisi-shortmovie.html" class="division-card">
+                            <div class="division-image"><img src="gambar/short movie.jpeg" alt="Short Movie" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Short Movie</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                        <a href="divisi-futsal.html" class="division-card">
+                            <div class="division-image"><img src="gambar/FUTSAL.IMAGE.jpeg" alt="Futsal" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Futsal</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                        <a href="divisi-pmr.html" class="division-card">
+                            <div class="division-image"><img src="gambar/PMR.IMAGE.jpeg" alt="PMR" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Palang Merah Remaja</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                        <a href="divisi-poster.html" class="division-card">
+                            <div class="division-image"><img src="gambar/digital poster.jpeg" alt="Digital Poster" onerror="this.onerror=null;this.src='card.jpg'"></div>
+                            <h3 class="division-name">Digital Poster</h3>
+                            <span class="division-cta">Lihat Halaman <i data-lucide="arrow-right"></i></span>
+                        </a>
+                    </div>
+                </section>
+
+                <!-- Social Icons -->
+                <ul class="social-icons">
+                    <li><a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a></li>
+                    <li><a href="#" aria-label="TikTok"><i data-lucide="music-4"></i></a></li>
+                    <li><a href="#" aria-label="WhatsApp"><i data-lucide="message-circle"></i></a></li>
+                </ul>
+
+                <footer>
+                    <p class="footer-text">© 2026 Exponer Cup. Developed BY: Wildan Arrayan.</p>
+                </footer>
+            </div>
+        </main>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
