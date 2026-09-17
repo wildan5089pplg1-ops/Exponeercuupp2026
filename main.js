@@ -1,5 +1,5 @@
-/* ============================================================
-   EXPONER CUP 2026 — main.js
+﻿/* ============================================================
+   EXPONER CUP 2026 â€” main.js
    1) Render ikon lucide
    2) Countdown timer
    3) Data divisi (panduan per lomba)
@@ -59,7 +59,7 @@ const DIVISI_DATA = {
         slug: 'ml',
         name: 'Mobile Legends',
         category: 'E-Sports',
-        image: 'TARI TRADISIONAL.IMAGE.jpeg',
+        image: 'gambar/ml.jpeg',
         desc: 'Turnamen Mobile Legends 5v5 antar sekolah. Adu strategi dan koordinasi tim untuk membawa trofi EXPONER CUP 2026!',
         wa: '6285750008886',
         links: {
@@ -73,7 +73,7 @@ const DIVISI_DATA = {
         slug: 'ff',
         name: 'Free Fire',
         category: 'E-Sports',
-        image: 'FREEFIRE.IMAGE.jpeg',
+        image: 'gambar/FREEFIRE.IMAGE.jpeg',
         desc: 'Turnamen Free Fire Squad mode Battle Royale. Squad terakhir yang bertahan adalah juaranya!',
         wa: '6285750008886',
         links: {
@@ -87,7 +87,7 @@ const DIVISI_DATA = {
         slug: 'basket',
         name: 'Basket Putra & Putri',
         category: 'Olahraga',
-        image: 'basket.image.jpeg',
+        image: 'gambar/basket.image.jpeg',
         desc: 'Kompetisi bola basket kategori Putra dan Putri dengan sistem setengah kompetisi.',
         wa: '6285750008886',
         links: {
@@ -101,12 +101,12 @@ const DIVISI_DATA = {
         slug: 'shortmovie',
         name: 'Short Movie',
         category: 'Seni & Kreativitas',
-        image: 'short movie.jpeg',
+        image: 'gambar/short movie.jpeg',
         desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasmu lewat visual!',
         wa: '6285750008886',
         links: {
-            guidebook: '#',
-            juknis: '#',
+guidebook: '#',
+            juknis: 'juknis-shortmovie.pdf',
             pendaftaran: 'https://forms.gle/ejzimcXMHQ6Bn6Tt5',
             undangan: '#'
         }
@@ -115,13 +115,13 @@ futsal: {
         slug: 'futsal',
         name: 'Futsal',
         category: 'Olahraga',
-        image: 'FUTSAL.IMGE.jpeg',
+        image: 'gambar/FUTSAL.IMAGE.jpeg',
         desc: 'Kompetisi futsal 5v5 antar sekolah. Eksekusi strategi dan teamwork untuk menjadi juara!',
         wa: '6285750008886',
         links: {
             guidebook: '#',
-            juknis: 'juknis-futsal.pdf',
-            pendaftaran: 'https://forms.gle/frGGAf7FU6dPxVwB7',
+juknis: 'juknis-futsal.pdf',
+            pendaftaran: 'https://forms.gle/6S6LVjcWRV64ExSRA',
             undangan: '#'
         }
     },
@@ -129,11 +129,11 @@ futsal: {
         slug: 'pmr',
         name: 'Palang Merah Remaja',
         category: 'Kepalangmerahan',
-        image: 'PMR.IMAGE.jpeg',
+        image: 'gambar/PMR.IMAGE.jpeg',
         desc: 'Lomba keterampilan Palang Merah Remaja: Pertolongan Pertama, donor darah, dan tanggap bencana.',
         wa: '6285750008886',
         links: {
-            guidebook: '#',
+guidebook: '#',
             juknis: '#',
             pendaftaran: 'https://forms.gle/UMHosL34Ak1xNB6DA',
             undangan: '#'
@@ -143,12 +143,12 @@ futsal: {
         slug: 'poster',
         name: 'Digital Poster',
         category: 'Desain Grafis',
-        image: 'digital poster.jpeg',
+        image: 'gambar/digital poster.jpeg',
         desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Emas".',
         wa: '6285750008886',
         links: {
-            guidebook: '#',
-            juknis: '#',
+guidebook: '#',
+            juknis: 'juknis-poster.pdf',
             pendaftaran: 'https://forms.gle/tBmLhyaAHfrxv6F28',
             undangan: '#'
         }
@@ -190,7 +190,7 @@ function renderDivisionPage() {
     const slug = window.PAGE_SLUG || 'ml';
     const data = DIVISI_DATA[slug] || DIVISI_DATA.ml;
 
-    document.title = `${data.name} — EXPONER CUP 2026`;
+    document.title = `${data.name} â€” EXPONER CUP 2026`;
 
     // Header divisi
     const hero = document.getElementById('divisionHero');
@@ -212,7 +212,7 @@ function renderDivisionPage() {
             const href = (data.links && data.links[doc.key]) || '';
             const ready = href && href !== '#';
             const itemCls = ready ? 'docs-item' : 'docs-item soon';
-            const label = ready ? doc.label : `${doc.label} — Segera`;
+            const label = ready ? doc.label : `${doc.label} â€” Segera`;
             const sub = ready ? doc.sub : 'Tautan akan segera tersedia';
             const arrow = ready
                 ? '<span class="docs-arrow"><i data-lucide="arrow-up-right"></i></span>'
