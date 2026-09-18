@@ -106,7 +106,7 @@ const DIVISI_DATA = {
         wa: '6285750008886',
         links: {
 guidebook: '#',
-            juknis: 'juknis-shortmovie.pdf',
+            juknis: 'juknis-video-competition.pdf',
             pendaftaran: 'https://forms.gle/ejzimcXMHQ6Bn6Tt5',
             undangan: '#'
         }
