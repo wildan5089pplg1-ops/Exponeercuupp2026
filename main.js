@@ -99,7 +99,7 @@ const DIVISI_DATA = {
     },
     shortmovie: {
         slug: 'shortmovie',
-        name: 'Short Movie',
+        name: 'Video Competition',
         category: 'Seni & Kreativitas',
         image: 'gambar/short movie.jpeg',
         desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasmu lewat visual!',
