@@ -132,9 +132,9 @@ juknis: 'juknis-futsal.pdf',
         image: 'gambar/PMR.IMAGE.jpeg',
         desc: 'Lomba keterampilan Palang Merah Remaja: Pertolongan Pertama, donor darah, dan tanggap bencana.',
         wa: '6285750008886',
-        links: {
+links: {
 guidebook: '#',
-            juknis: '#',
+            juknis: 'juknis-pmr.pdf',
             pendaftaran: 'https://forms.gle/UMHosL34Ak1xNB6DA',
             undangan: '#'
         }
