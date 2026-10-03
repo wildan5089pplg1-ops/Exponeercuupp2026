@@ -60,8 +60,10 @@ const DIVISI_DATA = {
         name: 'Mobile Legends',
         category: 'E-Sports',
         image: 'gambar/ml.jpeg',
-        desc: 'Turnamen Mobile Legends 5v5 antar sekolah. Adu strategi dan koordinasi tim untuk membawa trofi EXPONER CUP 2026!',
-        wa: '6285750008886',
+desc: 'Turnamen Mobile Legends 5v5 antar sekolah. Adu strategi dan koordinasi tim untuk membawa trofi EXPONER CUP 2026!',
+        wa: '6287822115106',
+        cp: 'Hafidzh',
+        cpNumber: '878-2211-5106',
         links: {
             guidebook: '#',
             juknis: 'juknis-ml.pdf',
@@ -74,8 +76,10 @@ const DIVISI_DATA = {
         name: 'Free Fire',
         category: 'E-Sports',
         image: 'gambar/FREEFIRE.IMAGE.jpeg',
-        desc: 'Turnamen Free Fire Squad mode Battle Royale. Squad terakhir yang bertahan adalah juaranya!',
-        wa: '6285750008886',
+desc: 'Turnamen Free Fire Squad mode Battle Royale. Squad terakhir yang bertahan adalah juaranya!',
+        wa: '62881024960130',
+        cp: 'Sulis',
+        cpNumber: '881-0249-60130',
         links: {
             guidebook: '#',
             juknis: 'juknis-ff.pdf',
@@ -88,8 +92,10 @@ const DIVISI_DATA = {
         name: 'Basket Putra & Putri',
         category: 'Olahraga',
         image: 'gambar/basket.image.jpeg',
-        desc: 'Kompetisi bola basket kategori Putra dan Putri dengan sistem setengah kompetisi.',
-        wa: '6285750008886',
+desc: 'Kompetisi bola basket kategori Putra dan Putri dengan sistem setengah kompetisi.',
+        wa: '6288905862768',
+        cp: 'Afiyah',
+        cpNumber: '889-0586-2768',
         links: {
             guidebook: '#',
             juknis: 'juknis-basket.pdf',
@@ -102,8 +108,10 @@ const DIVISI_DATA = {
         name: 'Video Competition',
         category: 'Seni & Kreativitas',
         image: 'gambar/short movie.jpeg',
-        desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasmu lewat visual!',
-        wa: '6285750008886',
+desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasmu lewat visual!',
+        wa: '6285795259029',
+        cp: 'Dian',
+        cpNumber: '857-9525-9029',
         links: {
 guidebook: '#',
             juknis: 'juknis-video-competition.pdf',
@@ -116,8 +124,10 @@ futsal: {
         name: 'Futsal',
         category: 'Olahraga',
         image: 'gambar/FUTSAL.IMAGE.jpeg',
-        desc: 'Kompetisi futsal 5v5 antar sekolah. Eksekusi strategi dan teamwork untuk menjadi juara!',
-        wa: '6285750008886',
+desc: 'Kompetisi futsal 5v5 antar sekolah. Eksekusi strategi dan teamwork untuk menjadi juara!',
+        wa: '6285717969762',
+        cp: 'Rifal',
+        cpNumber: '085717969762',
         links: {
             guidebook: '#',
 juknis: 'juknis-futsal.pdf',
@@ -130,8 +140,10 @@ juknis: 'juknis-futsal.pdf',
         name: 'Palang Merah Remaja',
         category: 'Kepalangmerahan',
         image: 'gambar/PMR.IMAGE.jpeg',
-        desc: 'Lomba keterampilan Palang Merah Remaja: Pertolongan Pertama, donor darah, dan tanggap bencana.',
-        wa: '6285750008886',
+desc: 'Lomba keterampilan Palang Merah Remaja: Pertolongan Pertama, donor darah, dan tanggap bencana.',
+        wa: '628988615029',
+        cp: 'Keyra',
+        cpNumber: '898-8615-029',
 links: {
 guidebook: '#',
             juknis: 'juknis-pmr.pdf',
@@ -144,8 +156,10 @@ guidebook: '#',
         name: 'Digital Poster',
         category: 'Desain Grafis',
         image: 'gambar/digital poster.jpeg',
-        desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Emas".',
-        wa: '6285750008886',
+desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Emas".',
+        wa: '6289525086150',
+        cp: 'Mita',
+        cpNumber: '895-2508-6150',
         links: {
 guidebook: '#',
             juknis: 'juknis-poster.pdf',
@@ -230,11 +244,17 @@ function renderDivisionPage() {
         }).join('');
     }
 
-    // Kontak WhatsApp panitia divisi
+// Kontak WhatsApp panitia divisi
     const wa = document.getElementById('waLink');
     if (wa && data.wa) {
         const msg = encodeURIComponent(`Halo panitia EXPONER CUP 2026, saya ingin bertanya tentang ${data.name}.`);
         wa.href = `https://wa.me/${data.wa}?text=${msg}`;
+        const waText = wa.querySelector('.wa-text');
+        if (waText) {
+            waText.innerHTML = data.cp
+                ? `<strong>Contact Person: ${data.cp}</strong><small>${data.cpNumber || data.wa}</small>`
+                : 'Kontak Panitia';
+        }
     }
 
     if (window.lucide) lucide.createIcons();
