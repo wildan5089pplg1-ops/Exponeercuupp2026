@@ -68,7 +68,8 @@ desc: 'Turnamen Mobile Legends 5v5 antar sekolah. Adu strategi dan koordinasi ti
             guidebook: '#',
             juknis: 'juknis-ml.pdf',
             pendaftaran: 'https://forms.gle/RDZWqMXLsi6o4xMe7',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     },
     ff: {
@@ -84,7 +85,8 @@ desc: 'Turnamen Free Fire Squad mode Battle Royale. Squad terakhir yang bertahan
             guidebook: '#',
             juknis: 'juknis-ff.pdf',
             pendaftaran: 'https://forms.gle/Xvkxtyvrkz5WvAG39',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     },
     basket: {
@@ -100,7 +102,8 @@ desc: 'Kompetisi bola basket kategori Putra dan Putri dengan sistem setengah kom
             guidebook: '#',
             juknis: 'juknis-basket.pdf',
             pendaftaran: 'https://forms.gle/oaRyL5y5e26njkPRA',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     },
     shortmovie: {
@@ -116,7 +119,8 @@ desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasm
 guidebook: '#',
             juknis: 'juknis-video-competition.pdf',
             pendaftaran: 'https://forms.gle/ejzimcXMHQ6Bn6Tt5',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     },
 futsal: {
@@ -132,7 +136,8 @@ desc: 'Kompetisi futsal 5v5 antar sekolah. Eksekusi strategi dan teamwork untuk 
             guidebook: '#',
 juknis: 'juknis-futsal.pdf',
             pendaftaran: 'https://forms.gle/6S6LVjcWRV64ExSRA',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     },
     pmr: {
@@ -148,7 +153,8 @@ links: {
 guidebook: '#',
             juknis: 'juknis-pmr.pdf',
             pendaftaran: 'https://forms.gle/UMHosL34Ak1xNB6DA',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     },
     poster: {
@@ -164,7 +170,8 @@ desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Ema
 guidebook: '#',
             juknis: 'juknis-poster.pdf',
             pendaftaran: 'https://forms.gle/tBmLhyaAHfrxv6F28',
-            undangan: '#'
+            undangan_smp: 'surat-undangan-smp.pdf',
+            undangan_sma: 'surat-undangan-sma.pdf'
         }
     }
 };
@@ -189,10 +196,16 @@ const DOC_DEFS = [
         label: 'Pendaftaran',
         sub: 'Formulir pendaftaran'
     },
-    {
-        key: 'undangan',
+{
+        key: 'undangan_smp',
         icon: 'mail',
-        label: 'Surat Undangan',
+        label: 'Surat Undangan SMP',
+        sub: 'Surat resmi panitia'
+    },
+    {
+        key: 'undangan_sma',
+        icon: 'mail',
+        label: 'Surat Undangan SMA',
         sub: 'Surat resmi panitia'
     }
 ];
