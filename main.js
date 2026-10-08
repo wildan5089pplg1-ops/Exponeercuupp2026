@@ -65,7 +65,7 @@ desc: 'Turnamen Mobile Legends 5v5 antar sekolah. Adu strategi dan koordinasi ti
         cp: 'Hafidzh',
         cpNumber: '878-2211-5106',
         links: {
-            guidebook: '#',
+            guidebook: 'guidebook-exponer-cup-2026.pdf',
             juknis: 'juknis-ml.pdf',
             pendaftaran: 'https://forms.gle/RDZWqMXLsi6o4xMe7',
             undangan_smp: 'surat-undangan-smp.pdf',
@@ -82,7 +82,7 @@ desc: 'Turnamen Free Fire Squad mode Battle Royale. Squad terakhir yang bertahan
         cp: 'Sulis',
         cpNumber: '881-0249-60130',
         links: {
-            guidebook: '#',
+            guidebook: 'guidebook-exponer-cup-2026.pdf',
             juknis: 'juknis-ff.pdf',
             pendaftaran: 'https://forms.gle/Xvkxtyvrkz5WvAG39',
             undangan_smp: 'surat-undangan-smp.pdf',
@@ -99,7 +99,7 @@ desc: 'Kompetisi bola basket kategori Putra dan Putri dengan sistem setengah kom
         cp: 'Afiyah',
         cpNumber: '889-0586-2768',
         links: {
-            guidebook: '#',
+            guidebook: 'guidebook-exponer-cup-2026.pdf',
             juknis: 'juknis-basket.pdf',
             pendaftaran: 'https://forms.gle/oaRyL5y5e26njkPRA',
             undangan_smp: 'surat-undangan-smp.pdf',
@@ -116,7 +116,7 @@ desc: 'Lomba pembuatan film pendek bertema bebas. Ceritakan ide dan kreativitasm
         cp: 'Dian',
         cpNumber: '857-9525-9029',
         links: {
-guidebook: '#',
+guidebook: 'guidebook-exponer-cup-2026.pdf',
             juknis: 'juknis-video-competition.pdf',
             pendaftaran: 'https://forms.gle/ejzimcXMHQ6Bn6Tt5',
             undangan_smp: 'surat-undangan-smp.pdf',
@@ -133,7 +133,7 @@ desc: 'Kompetisi futsal 5v5 antar sekolah. Eksekusi strategi dan teamwork untuk 
         cp: 'Rifal',
         cpNumber: '085717969762',
         links: {
-            guidebook: '#',
+            guidebook: 'guidebook-exponer-cup-2026.pdf',
 juknis: 'juknis-futsal.pdf',
             pendaftaran: 'https://forms.gle/6S6LVjcWRV64ExSRA',
             undangan_smp: 'surat-undangan-smp.pdf',
@@ -150,7 +150,7 @@ desc: 'Lomba keterampilan Palang Merah Remaja: Pertolongan Pertama, donor darah,
         cp: 'Keyra',
         cpNumber: '898-8615-029',
 links: {
-guidebook: '#',
+guidebook: 'guidebook-exponer-cup-2026.pdf',
             juknis: 'juknis-pmr.pdf',
             pendaftaran: 'https://forms.gle/UMHosL34Ak1xNB6DA',
             undangan_smp: 'surat-undangan-smp.pdf',
@@ -167,7 +167,7 @@ desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Ema
         cp: 'Mita',
         cpNumber: '895-2508-6150',
         links: {
-guidebook: '#',
+guidebook: 'guidebook-exponer-cup-2026.pdf',
             juknis: 'juknis-poster.pdf',
             pendaftaran: 'https://forms.gle/tBmLhyaAHfrxv6F28',
             undangan_smp: 'surat-undangan-smp.pdf',
