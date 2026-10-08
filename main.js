@@ -168,7 +168,10 @@ desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Ema
         cpNumber: '895-2508-6150',
         links: {
 guidebook: 'guidebook-exponer-cup-2026.pdf',
-            juknis: 'juknis-poster.pdf',
+            juknis: [
+                { href: 'juknis-poster.pdf', label: 'Juknis (Versi Lama)', sub: 'Petunjuk teknis lomba' },
+                { href: 'juknis-poster-terbaru.pdf', label: 'Juknis (Versi Terbaru)', sub: 'JUKNIS DIGITAL pdf' }
+            ],
             pendaftaran: 'https://forms.gle/tBmLhyaAHfrxv6F28',
             undangan_smp: 'surat-undangan-smp.pdf',
             undangan_sma: 'surat-undangan-sma.pdf'
@@ -235,12 +238,15 @@ function renderDivisionPage() {
     // 4 dokumen: Guidebook / Juknis / Pendaftaran / Surat Undangan
     const list = document.getElementById('docsList');
     if (list) {
-        list.innerHTML = DOC_DEFS.map((doc) => {
-            const href = (data.links && data.links[doc.key]) || '';
+        list.innerHTML = DOC_DEFS.flatMap((doc) => {
+            const raw = (data.links && data.links[doc.key]) || '';
+            const items = Array.isArray(raw) ? raw : [raw];
+            return items.map((it) => {
+                const href = it && typeof it === 'object' ? (it.href || '') : (it || '');
             const ready = href && href !== '#';
             const itemCls = ready ? 'docs-item' : 'docs-item soon';
             const label = ready ? doc.label : `${doc.label} â€” Segera`;
-            const sub = ready ? doc.sub : 'Tautan akan segera tersedia';
+            const sub = ready ? (it && typeof it === 'object' && it.sub ? it.sub : doc.sub) : 'Tautan akan segera tersedia';
             const arrow = ready
                 ? '<span class="docs-arrow"><i data-lucide="arrow-up-right"></i></span>'
                 : '<span class="docs-arrow soon"><i data-lucide="lock"></i></span>';
@@ -254,6 +260,7 @@ function renderDivisionPage() {
                     ${arrow}
                 </a>
             `;
+            }).join('');
         }).join('');
     }
 
