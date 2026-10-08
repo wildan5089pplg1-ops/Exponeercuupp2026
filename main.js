@@ -168,10 +168,7 @@ desc: 'Lomba desain poster digital dengan tema "Energi Pemuda untuk Generasi Ema
         cpNumber: '895-2508-6150',
         links: {
 guidebook: 'guidebook-exponer-cup-2026.pdf',
-            juknis: [
-                { href: 'juknis-poster.pdf', label: 'Juknis (Versi Lama)', sub: 'Petunjuk teknis lomba' },
-                { href: 'juknis-poster-terbaru.pdf', label: 'Juknis (Versi Terbaru)', sub: 'JUKNIS DIGITAL pdf' }
-            ],
+juknis: 'juknis-poster-terbaru.pdf',
             pendaftaran: 'https://forms.gle/tBmLhyaAHfrxv6F28',
             undangan_smp: 'surat-undangan-smp.pdf',
             undangan_sma: 'surat-undangan-sma.pdf'
